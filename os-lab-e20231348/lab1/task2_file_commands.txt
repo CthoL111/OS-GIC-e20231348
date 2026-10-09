@@ -1,0 +1,13 @@
+/home/gic-yan-chanthol/oslab-work/lab1/task2_files
+cloud.txt
+maple.txt
+This is file cloud
+This is file maple
+cloud.txt
+cloud_copy.txt
+maple.txt
+cloud.txt
+cloud_copy.txt
+maple_renamed.txt
+cloud.txt
+maple_renamed.txt
