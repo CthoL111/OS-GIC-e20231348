@@ -1,1 +1,4 @@
-os-lab-e20231348/lab1
+/usr/bin/mc
+drwxr-xr-x 2 root root 4096 Oct 12 20:52 /etc/mc
+drwxr-xr-x 2 root root 4096 Oct 12 20:52 /etc/mc
+ls: cannot access '/etc/mc': No such file or directory
