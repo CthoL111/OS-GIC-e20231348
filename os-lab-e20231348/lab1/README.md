@@ -21,7 +21,7 @@ I made a folder, created cloud.txt and maple.txt, wrote a line in each, copied t
 
 ## Task 3: Package Management Using APT
 
-(Write this after you do Task 3.)
+I used `apt` to manage a package. First I ran `sudo apt update` to refresh the package list. Then I installed **PACKAGE_NAME** with `sudo apt install PACKAGE_NAME`, and checked it with `PACKAGE_NAME --version`. The output showed it was installed correctly. APT is the package manager that downloads and installs software and its dependencies automatically.
 
 ![Task 3](images/task3.png)
 
