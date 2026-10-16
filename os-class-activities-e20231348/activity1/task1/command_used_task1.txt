@@ -1,0 +1,36 @@
+# ==========================================
+# WARM-UP EXAMPLES ACTIONS LOG
+# ==========================================
+
+# 1. Compilation and execution for direct Linux system call warm-up
+gcc -o hello_syscall hello_syscall.c
+./hello_syscall
+
+# 2. Windows API environment cross-compilation baseline verification
+x86_64-w64-mingw32-gcc -o hello_winapi.exe hello_winapi.c
+
+# 3. Compilation and execution for low-level file cloner tool
+gcc -o copyfilesyscall hello_copy.c
+./copyfilesyscall
+
+# ==========================================
+# CORE ASSIGNMENT COMPILATION UTILITIES
+# ==========================================
+
+# Task 1A: C Standard Library vs POSIX system call file creators
+gcc -o file_creator_lib file_creator_lib.c
+./file_creator_lib
+
+gcc -o file_creator_sys file_creator_sys.c
+./file_creator_sys
+
+# Task 1B: High-level reader streams vs raw sequence byte file loops
+gcc -o file_reader_lib file_reader_lib.c
+./file_reader_lib
+
+gcc -o file_reader_sys file_reader_sys.c
+./file_reader_sys
+
+# Optional Bonus Task: Cross-compiling file creator for native Windows APIs
+x86_64-w64-mingw32-gcc -o file_creator_win.exe file_creator_win.c
+

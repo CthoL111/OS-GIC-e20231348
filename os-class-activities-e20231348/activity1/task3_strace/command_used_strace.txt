@@ -1,0 +1,15 @@
+# Copy source file for tracing loop context validation
+cp ../task1/output.txt .
+
+# Tracing Task 1A File Creator components
+strace -e trace=openat,read,write,close ../task1/file_creator_lib 2> strace_lib_task1.txt
+strace -e trace=openat,read,write,close ../task1/file_creator_sys 2> strace_sys_task1.txt
+
+# Tracing Task 1B File Reader components
+strace -e trace=openat,read,write,close ../task1/file_reader_lib 2> strace_lib_reader.txt
+strace -e trace=openat,read,write,close ../task1/file_reader_sys 2> strace_sys_reader.txt
+
+# Generating profiling matrices summaries
+strace -c ../task1/file_creator_lib 2> strace_summary_lib.txt
+strace -c ../task1/file_creator_sys 2> strace_summary_sys.txt
+
